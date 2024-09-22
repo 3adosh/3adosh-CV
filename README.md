@@ -16,6 +16,6 @@
     </style>
 </head>
 <body>
-    <embed src="CV.pdf" type="img" />
+    <embed src="CV.pdf" type="application/pdf" />
 </body>
 </html>
