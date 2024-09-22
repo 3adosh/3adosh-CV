@@ -11,6 +11,7 @@
             background-repeat: no-repeat;  
             margin: 0;
             padding: 20px;
+            transition: background-color 0.5s;
         }
         .container {
             max-width: 800px;
@@ -19,9 +20,13 @@
             border: 2px solid grey;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s, transform 1s;
         }
         h1, h2 {
             color: #333;
+            transition: transform 0.5s;
         }
         .section {
             margin-bottom: 20px;
@@ -40,22 +45,45 @@
             padding: 15px;
             background-color: #f9f9f9;
             margin-bottom: 20px;
+            cursor: pointer;
         }
         .profile-picture {
-            width: 300px;  /* تعديل حجم الصورة */
+            width: 300px;  
             height: 300px;
             border-radius: 50%;
             object-fit: cover;
             justify-self: end;  
-            transition: transform 0.3s; /* تأثير الانتقال */
+            transition: transform 0.3s; 
         }
         .profile-picture:hover {
-            transform: scale(1.1); /* تكبير الصورة عند التمرير */
+            transform: scale(1.1); 
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 2px solid grey;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 500;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <h1>Oday Hmydat</h1>
         <div class="contact-info">
             <div class="details">
@@ -73,7 +101,7 @@
             <p>Expected Graduation: 2025</p>
         </div>
 
-        <div class="section experience">
+        <div class="section experience" onclick="showPopup('Experience Details', 'Details about my experience and roles.')">
             <h2>Experience</h2>
             <p><strong>Data Entry Assistant</strong></p>
             <p>Computer and Information Center, Yarmouk University</p>
@@ -84,7 +112,7 @@
             <p>Resolved usage errors for students and assisted with external courses like Cisco.</p>
         </div>
 
-        <div class="section skills">
+        <div class="section skills" onclick="showPopup('Skills Details', 'Details about my skills.')">
             <h2>Skills</h2>
             <ul>
                 <li>Proficient in Microsoft Office Suite</li>
@@ -93,22 +121,42 @@
             </ul>
         </div>
 
-        <div class="section achievements">
+        <div class="section achievements" onclick="showPopup('Achievements Details', 'Details about my achievements.')">
             <h2>Achievements</h2>
             <p>Contributed to improving the data management system by 20%.</p>
         </div>
     </div>
 
+    <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+    <div class="popup" id="popup">
+        <h2 id="popup-title"></h2>
+        <p id="popup-content"></p>
+        <button onclick="hidePopup()">Close</button>
+    </div>
+
     <script>
-        // تأثير عند تحميل الصفحة
         window.onload = function() {
-            const profilePic = document.getElementById('profilePic');
-            profilePic.style.opacity = 0; // بداية بغير مرئية
-            setTimeout(() => {
-                profilePic.style.transition = 'opacity 1s';
-                profilePic.style.opacity = 1; // تظهر تدريجيا
-            }, 500);
+            const container = document.getElementById('container');
+            container.style.opacity = 1;
+            container.style.transform = 'translateY(0)';
         };
+
+        window.onscroll = function() {
+            const scrollY = window.scrollY;
+            document.body.style.backgroundColor = `rgba(255, 255, 255, ${Math.min(scrollY / 1000, 0.8)})`;
+        };
+
+        function showPopup(title, content) {
+            document.getElementById('popup-title').innerText = title;
+            document.getElementById('popup-content').innerText = content;
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
     </script>
 </body>
 </html>
