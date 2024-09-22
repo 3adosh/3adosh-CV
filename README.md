@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,7 +26,7 @@
             text-align: center;
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 30px; /* زيادة المسافة بين الأقسام */
         }
         .section h2 {
             border-bottom: 2px solid #333;
@@ -47,6 +48,10 @@
             border-radius: 50%;
             object-fit: cover; /* This will crop the image to fit the circle */
         }
+        /* إضافة مسافة بين الفقرات داخل الأقسام */
+        .section p, .section ul {
+            margin-top: 10px; /* مسافة بين الفقرات */
+        }
     </style>
 </head>
 <body>
@@ -55,7 +60,7 @@
     <h1>Oday Hmydat</h1>
     <div class="info">
         <!-- Adjust the "src" to your image URL -->
-        <img src="IMG_20240311_175844_752.jpg" alt="Oday Hmydat" class="profile-pic">
+        <img src="your-photo-url.jpg" alt="Oday Hmydat" class="profile-pic">
         <div class="details">
             <p><strong>Email:</strong> odyhmydat@gmail.com</p>
             <p><strong>Phone:</strong> +962 780545668</p>
@@ -65,24 +70,24 @@
 
     <div class="section">
         <h2>Education</h2>
-        <p>  A student from the third cohort of Cybersecurity at Yarmouk University, expected to graduate in 2025.</p>
+        <p>A student from the third cohort of Cybersecurity at Yarmouk University, expected to graduate in 2025.</p>
     </div>
 
     <div class="section">
         <h2>Experience</h2>
-        <p>  I worked as a Data Entry Assistant at Computer and Information Center at Yarmouk University, and as a Problem Analyst at the Computer Centre. I assisted students with issues like incorrect passwords and emails, and helped them with external courses like Cisco courses.</p>
+        <p>I worked as a Data Entry Assistant at Computer and Information Center at Yarmouk University, and as a Problem Analyst at the Computer Centre. I assisted students with issues like incorrect passwords and emails, and helped them with external courses like Cisco courses.</p>
     </div>
 
     <div class="section">
         <h2>Skills</h2>
         <ul>
-            <li> Proficient in Microsoft Office, data analysis, and IT troubleshooting.</li>
+            <li>Proficient in Microsoft Office, data analysis, and IT troubleshooting.</li>
         </ul>
     </div>
 
     <div class="section">
         <h2>Achievements</h2>
-        <p>  I contributed to improving the data management system by 20% through implementing updates and new technologies.</p>
+        <p>I contributed to improving the data management system by 20% through implementing updates and new technologies.</p>
     </div>
 </div>
 
