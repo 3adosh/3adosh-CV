@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,8 +42,8 @@
             margin-bottom: 20px;
         }
         .profile-picture {
-            width: 150px;  /* تعديل حجم الصورة */
-            height: 150px;
+            width: 300px;  /* تعديل حجم الصورة */
+            height: 300px;
             border-radius: 50%;
             object-fit: cover;
             margin-left: 20px;
