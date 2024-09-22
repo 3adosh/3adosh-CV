@@ -45,7 +45,6 @@
             padding: 15px;
             background-color: #f9f9f9;
             margin-bottom: 20px;
-            cursor: pointer;
         }
         .profile-picture {
             width: 300px;  
@@ -57,28 +56,6 @@
         }
         .profile-picture:hover {
             transform: scale(1.1); 
-        }
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            border: 2px solid grey;
-            padding: 20px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-        }
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 500;
         }
     </style>
 </head>
@@ -101,7 +78,7 @@
             <p>Expected Graduation: 2025</p>
         </div>
 
-        <div class="section experience" onclick="showPopup('Experience Details', 'Details about my experience and roles.')">
+        <div class="section experience">
             <h2>Experience</h2>
             <p><strong>Data Entry Assistant</strong></p>
             <p>Computer and Information Center, Yarmouk University</p>
@@ -112,7 +89,7 @@
             <p>Resolved usage errors for students and assisted with external courses like Cisco.</p>
         </div>
 
-        <div class="section skills" onclick="showPopup('Skills Details', 'Details about my skills.')">
+        <div class="section skills">
             <h2>Skills</h2>
             <ul>
                 <li>Proficient in Microsoft Office Suite</li>
@@ -121,17 +98,10 @@
             </ul>
         </div>
 
-        <div class="section achievements" onclick="showPopup('Achievements Details', 'Details about my achievements.')">
+        <div class="section achievements">
             <h2>Achievements</h2>
             <p>Contributed to improving the data management system by 20%.</p>
         </div>
-    </div>
-
-    <div class="overlay" id="overlay" onclick="hidePopup()"></div>
-    <div class="popup" id="popup">
-        <h2 id="popup-title"></h2>
-        <p id="popup-content"></p>
-        <button onclick="hidePopup()">Close</button>
     </div>
 
     <script>
@@ -145,18 +115,6 @@
             const scrollY = window.scrollY;
             document.body.style.backgroundColor = `rgba(255, 255, 255, ${Math.min(scrollY / 1000, 0.8)})`;
         };
-
-        function showPopup(title, content) {
-            document.getElementById('popup-title').innerText = title;
-            document.getElementById('popup-content').innerText = content;
-            document.getElementById('popup').style.display = 'block';
-            document.getElementById('overlay').style.display = 'block';
-        }
-
-        function hidePopup() {
-            document.getElementById('popup').style.display = 'none';
-            document.getElementById('overlay').style.display = 'none';
-        }
     </script>
 </body>
 </html>
