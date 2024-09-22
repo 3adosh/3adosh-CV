@@ -8,7 +8,8 @@
             font-family: Arial, sans-serif;
             background-image: url('IMG_20240311_175844_752.jpg'); /* رابط الخلفية */
             background-size: cover;
-            background-repeat: no-repeat;  /* عدم تكرار الخلفية */
+            background-repeat: no-repeat; /* منع تكرار الخلفية */
+            background-position: center; /* تثبيت الخلفية في المركز */
             margin: 0;
             padding: 20px;
         }
@@ -85,6 +86,7 @@
             <h2>Achievements</h2>
             <p>Contributed to improving the data management system by 20%.</p>
         </div>
+
     </div>
 </body>
 </html>
