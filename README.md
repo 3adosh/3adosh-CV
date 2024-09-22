@@ -42,11 +42,15 @@
             margin-bottom: 20px;
         }
         .profile-picture {
-            width: 100px;  /* تعديل حجم الصورة */
-            height: 100px;
+            width: 300px;  /* تعديل حجم الصورة */
+            height: 300px;
             border-radius: 50%;
             object-fit: cover;
-            justify-self: end;  /* محاذاة الصورة إلى اليمين */
+            justify-self: end;  
+            transition: transform 0.3s; /* تأثير الانتقال */
+        }
+        .profile-picture:hover {
+            transform: scale(1.1); /* تكبير الصورة عند التمرير */
         }
     </style>
 </head>
@@ -59,7 +63,7 @@
                 <p><strong>Phone:</strong> +962 780 545 668</p>
                 <p><strong>Email:</strong> <a href="mailto:odyhmydat@gmail.com">odyhmydat@gmail.com</a></p>
             </div>
-            <img src="IMG_20240311_175844_752.jpg" alt="Profile Picture" class="profile-picture">
+            <img src="IMG_20240311_175844_752.jpg" alt="Profile Picture" class="profile-picture" id="profilePic">
         </div>
 
         <div class="section education">
@@ -94,5 +98,17 @@
             <p>Contributed to improving the data management system by 20%.</p>
         </div>
     </div>
+
+    <script>
+        // تأثير عند تحميل الصفحة
+        window.onload = function() {
+            const profilePic = document.getElementById('profilePic');
+            profilePic.style.opacity = 0; // بداية بغير مرئية
+            setTimeout(() => {
+                profilePic.style.transition = 'opacity 1s';
+                profilePic.style.opacity = 1; // تظهر تدريجيا
+            }, 500);
+        };
+    </script>
 </body>
 </html>
