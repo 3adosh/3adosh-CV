@@ -52,7 +52,7 @@
 <div class="container">
     <h1>Oday Hmydat</h1>
     <div class="info">
-        <img src="your-photo-url.jpg" alt="Oday Hmydat">
+        <img src="IMG_20240311_175844_752.jpg" alt="Oday Hmydat">
         <div class="details">
             <p><strong>Email:</strong> odyhmydat@gmail.com</p>
             <p><strong>Phone:</strong> +962 780545668</p>
