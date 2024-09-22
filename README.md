@@ -28,9 +28,7 @@
             margin-bottom: 30px; /* زيادة المسافة بين الأقسام */
         }
         .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
+            margin-bottom: 10px; /* إزالة الحدود السفلية */
         }
         .info {
             display: flex;
