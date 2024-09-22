@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('https://github.com/username/repo/blob/main/background-image.jpg'); /* رابط الخلفية */
+            background-image: url('IMG_20240311_175844_752.jpg'); /* رابط الخلفية */
             background-size: cover;
             margin: 0;
             padding: 20px;
@@ -48,7 +48,7 @@
     <div class="container">
         <h1>Oday Hmydat</h1>
         <div class="contact-info">
-            <img src="https://github.com/username/repo/blob/main/IMG_20240311_175844_752.jpg" alt="Profile Picture" class="profile-picture">
+            <img src="IMG_20240311_175844_752.jpg" alt="Profile Picture" class="profile-picture">
             <p><strong>Location:</strong> Koura District, Irbid, Jordan</p>
             <p><strong>Phone:</strong> +962 780 545 668</p>
             <p><strong>Email:</strong> <a href="mailto:odyhmydat@gmail.com">odyhmydat@gmail.com</a></p>
