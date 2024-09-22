@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,16 +6,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('IMG_20240311_175844_752.jpg'); /* رابط الخلفية */
+            background-image: url('IMG_20240311_175844_752.jpg'); 
             background-size: cover;
-            background-repeat: no-repeat;  /* عدم تكرار الخلفية */
+            background-repeat: no-repeat;  
             margin: 0;
             padding: 20px;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8); /* خلفية شفافة قليلاً */
+            background-color: rgba(255, 255, 255, 0.8); 
             border: 2px solid grey;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -28,12 +27,13 @@
             margin-bottom: 20px;
         }
         .contact-info {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr auto;
             align-items: center;
             margin-bottom: 20px;
         }
         .contact-info .details {
-            flex: 1;
+            padding-right: 20px;
         }
         .experience, .skills, .achievements {
             border: 1px solid #ddd;
@@ -42,11 +42,11 @@
             margin-bottom: 20px;
         }
         .profile-picture {
-            width: 300px;  /* تعديل حجم الصورة */
-            height: 300px;
+            width: 100px;  /* تعديل حجم الصورة */
+            height: 100px;
             border-radius: 50%;
             object-fit: cover;
-            margin-left: 20px;
+            justify-self: end;  /* محاذاة الصورة إلى اليمين */
         }
     </style>
 </head>
