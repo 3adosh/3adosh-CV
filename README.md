@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,6 +16,6 @@
     </style>
 </head>
 <body>
-    <embed src="CV.pdf" type="application/pdf" />
+    <embed src="CV.pdf" type="img" />
 </body>
 </html>
