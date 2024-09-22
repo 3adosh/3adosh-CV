@@ -50,6 +50,11 @@
         /* إضافة مسافة بين الفقرات داخل الأقسام */
         .section p, .section ul {
             margin-top: 10px; /* مسافة بين الفقرات */
+            text-indent: 20px; /* مسافة بداية كل سطر */
+        }
+        .section ul {
+            list-style-type: none; /* إزالة النقاط السوداء */
+            padding: 0; /* إزالة الحشو */
         }
     </style>
 </head>
@@ -58,7 +63,6 @@
 <div class="container">
     <h1>Oday Hmydat</h1>
     <div class="info">
-        <!-- Adjust the "src" to your image URL -->
         <img src="IMG_20240311_175844_752.jpg" alt="Oday Hmydat" class="profile-pic">
         <div class="details">
             <p><strong>Email:</strong> odyhmydat@gmail.com</p>
