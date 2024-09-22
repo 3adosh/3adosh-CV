@@ -1,19 +1,45 @@
 # Oday Hmydat
 
-![Oday Hmydat](IMG_20240311_175844_752.jpg)
+- **Location**: Koura District, Irbid, Jordan
+- **Phone**: +962 780 545 668
+- **Email**: [odyhmydat@gmail.com](mailto:odyhmydat@gmail.com)
 
-**Email:** odyhmydat@gmail.com  
-**Phone:** +962 780545668  
-**Location:** Koura District, Irbid, Jordan  
+---
 
-## Education
-A student from the third cohort of Cybersecurity at Yarmouk University, expected to graduate in 2025.
+## 🎓 Education
 
-## Experience
-I worked as a Data Entry Assistant at the Computer and Information Center at Yarmouk University, and as a Problem Analyst at the Computer Centre. I assisted students with issues like incorrect passwords and emails, and helped them with external courses like Cisco courses.
+**Yarmouk University**  
+_Expected Graduation: 2025_  
+Cybersecurity, Third Cohort
 
-## Skills
-- Proficient in Microsoft Office, data analysis, and IT troubleshooting.
+---
 
-## Achievements
-I contributed to improving the data management system by 20% through implementing updates and new technologies.
+## 💼 Experience
+
+**Data Entry Assistant**  
+_Computer and Information Center, Yarmouk University_  
+- Assisted with data management and entry tasks.  
+- Contributed to improving the data management system by **20%** through implementing updates and new technologies.
+
+**Problem Analyst**  
+_Computer Centre, Yarmouk University_  
+- Resolved usage errors for students, including issues with passwords and university emails.  
+- Assisted students with personal emails to access external courses (e.g., Cisco courses).
+
+---
+
+## 💡 Skills
+
+- Proficient in Microsoft Office Suite.
+- Data Analysis.
+- IT Troubleshooting.
+
+---
+
+## 🏆 Achievements
+
+- Contributed to improving the data management system by 20%.
+
+---
+
+[My Google Account](https://myaccount.google.com/email)
