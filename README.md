@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,15 +36,17 @@
         .info {
             display: flex;
             justify-content: space-between;
-        }
-        .info img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            align-items: center;
         }
         .info .details {
             flex: 1;
             padding-left: 20px;
+        }
+        .info .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover; /* This will crop the image to fit the circle */
         }
     </style>
 </head>
@@ -52,7 +55,8 @@
 <div class="container">
     <h1>Oday Hmydat</h1>
     <div class="info">
-        <img src="IMG_20240311_175844_752.jpg" alt="Oday Hmydat">
+        <!-- Adjust the "src" to your image URL -->
+        <img src="your-photo-url.jpg" alt="Oday Hmydat" class="profile-pic">
         <div class="details">
             <p><strong>Email:</strong> odyhmydat@gmail.com</p>
             <p><strong>Phone:</strong> +962 780545668</p>
