@@ -56,7 +56,7 @@
     <h1>Oday Hmydat</h1>
     <div class="info">
         <!-- Adjust the "src" to your image URL -->
-        <img src="your-photo-url.jpg" alt="Oday Hmydat" class="profile-pic">
+        <img src="IMG_20240311_175844_752.jpg" alt="Oday Hmydat" class="profile-pic">
         <div class="details">
             <p><strong>Email:</strong> odyhmydat@gmail.com</p>
             <p><strong>Phone:</strong> +962 780545668</p>
