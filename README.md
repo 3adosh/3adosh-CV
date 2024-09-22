@@ -1,121 +1,50 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oday Hmydat CV</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('IMG_20240311_175844_752.jpg'); 
-            background-size: cover;
-            background-repeat: no-repeat;  
-            margin: 0;
-            padding: 20px;
-            transition: background-color 0.5s;
-            color: #f0f0f0; /* لون النص */
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: rgba(50, 50, 50, 0.9); /* لون الخلفية */
-            border: 2px solid grey;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s, transform 1s;
-        }
-        h1, h2 {
-            color: #e0e0e0; /* لون العناوين */
-            transition: transform 0.5s;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .contact-info {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .contact-info .details {
-            padding-right: 20px;
-        }
-        .experience, .skills, .achievements {
-            border: 1px solid #666; /* لون الحدود */
-            padding: 15px;
-            background-color: #333; /* لون الخلفية للقسم */
-            margin-bottom: 20px;
-        }
-        .profile-picture {
-            width: 300px;  
-            height: 300px;
-            border-radius: 50%;
-            object-fit: cover;
-            justify-self: end;  
-            transition: transform 0.3s; 
-        }
-        .profile-picture:hover {
-            transform: scale(1.1); 
-        }
-    </style>
-</head>
-<body>
-    <div class="container" id="container">
+import React from 'react';
+
+const CV = () => {
+  return (
+    <div style={{ fontFamily: 'Arial, sans-serif', maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
+      <header style={{ textAlign: 'center', marginBottom: '50px' }}>
         <h1>Oday Hmydat</h1>
-        <div class="contact-info">
-            <div class="details">
-                <p><strong>Location:</strong> Koura District, Irbid, Jordan</p>
-                <p><strong>Phone:</strong> +962 780 545 668</p>
-                <p><strong>Email:</strong> <a href="mailto:odyhmydat@gmail.com" style="color: #f0f0f0;">odyhmydat@gmail.com</a></p>
-            </div>
-            <img src="IMG_20240311_175844_752.jpg" alt="Profile Picture" class="profile-picture" id="profilePic">
-        </div>
+        <p>Koura District, Irbid, Jordan</p>
+        <p>Email: <a href="mailto:odyhmydat@gmail.com">odyhmydat@gmail.com</a></p>
+        <p>Phone: +962 780 545 668</p>
+      </header>
 
-        <div class="section education">
-            <h2>Education</h2>
-            <p><strong>Yarmouk University</strong></p>
-            <p>Cybersecurity, Third Cohort</p>
-            <p>Expected Graduation: 2025</p>
-        </div>
+      <section style={{ marginBottom: '30px' }}>
+        <h2>Education</h2>
+        <p>
+          A student from the third cohort of Cybersecurity at Yarmouk University, expected to graduate in 2025.
+        </p>
+      </section>
 
-        <div class="section experience">
-            <h2>Experience</h2>
-            <p><strong>Data Entry Assistant</strong></p>
-            <p>Computer and Information Center, Yarmouk University</p>
-            <p>Contributed to improving the data management system by 20% through implementing updates and new technologies.</p>
+      <section style={{ marginBottom: '30px' }}>
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            <strong>Data Entry Assistant</strong> at Computer and Information Center, Yarmouk University.
+          </li>
+          <li>
+            <strong>Problem Analyst</strong> at Computer Centre, resolving usage errors for students with issues such as incorrect passwords and university emails.
+          </li>
+          <li>
+            Assisted students with personal emails used to access external university-related courses, such as Cisco courses.
+          </li>
+        </ul>
+      </section>
 
-            <p><strong>Problem Analyst</strong></p>
-            <p>Computer Centre, Yarmouk University</p>
-            <p>Resolved usage errors for students and assisted with external courses like Cisco.</p>
-        </div>
+      <section style={{ marginBottom: '30px' }}>
+        <h2>Skills</h2>
+        <p>Proficient in Microsoft Office, data analysis, and IT troubleshooting.</p>
+      </section>
 
-        <div class="section skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Proficient in Microsoft Office Suite</li>
-                <li>Data Analysis</li>
-                <li>IT Troubleshooting</li>
-            </ul>
-        </div>
-
-        <div class="section achievements">
-            <h2>Achievements</h2>
-            <p>Contributed to improving the data management system by 20%.</p>
-        </div>
+      <section style={{ marginBottom: '30px' }}>
+        <h2>Achievements</h2>
+        <p>
+          Contributed to improving the data management system by 20% through implementing updates and new technologies.
+        </p>
+      </section>
     </div>
+  );
+};
 
-    <script>
-        window.onload = function() {
-            const container = document.getElementById('container');
-            container.style.opacity = 1;
-            container.style.transform = 'translateY(0)';
-        };
-
-        window.onscroll = function() {
-            const scrollY = window.scrollY;
-            document.body.style.backgroundColor = `rgba(0, 0, 0, ${Math.min(scrollY / 1000, 0.8)})`; /* لون الخلفية */
-        };
-    </script>
-</body>
-</html>
+export default CV;
