@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oday Hmydat - CV</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        embed {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
-    <h1>Oday Hmydat - CV</h1>
-    <p>If the PDF does not load, <a href="CV.pdf" target="_blank">click here to download the CV.</a></p>
-    <embed src="CV.pdf" width="100%" height="800px" />
+    <embed src="CV.pdf" type="application/pdf" />
 </body>
 </html>
