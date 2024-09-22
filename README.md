@@ -28,7 +28,10 @@
             margin-bottom: 30px; /* زيادة المسافة بين الأقسام */
         }
         .section h2 {
-            margin-bottom: 10px; /* إزالة الحدود السفلية */
+            border-top: 2px solid #333; /* إضافة خط علوي */
+            border-bottom: 2px solid #333; /* خط سفلي */
+            padding: 10px 0; /* مسافة فوق وتحت النص */
+            margin-bottom: 10px; /* مسافة تحت العنوان */
         }
         .info {
             display: flex;
