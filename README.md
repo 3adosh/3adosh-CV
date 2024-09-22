@@ -65,24 +65,24 @@
 
     <div class="section">
         <h2>Education</h2>
-        <p>A student from the third cohort of Cybersecurity at Yarmouk University, expected to graduate in 2025.</p>
+        <p>  A student from the third cohort of Cybersecurity at Yarmouk University, expected to graduate in 2025.</p>
     </div>
 
     <div class="section">
         <h2>Experience</h2>
-        <p>I worked as a Data Entry Assistant at Computer and Information Center at Yarmouk University, and as a Problem Analyst at the Computer Centre. I assisted students with issues like incorrect passwords and emails, and helped them with external courses like Cisco courses.</p>
+        <p>  I worked as a Data Entry Assistant at Computer and Information Center at Yarmouk University, and as a Problem Analyst at the Computer Centre. I assisted students with issues like incorrect passwords and emails, and helped them with external courses like Cisco courses.</p>
     </div>
 
     <div class="section">
         <h2>Skills</h2>
         <ul>
-            <li>Proficient in Microsoft Office, data analysis, and IT troubleshooting.</li>
+            <li> Proficient in Microsoft Office, data analysis, and IT troubleshooting.</li>
         </ul>
     </div>
 
     <div class="section">
         <h2>Achievements</h2>
-        <p>I contributed to improving the data management system by 20% through implementing updates and new technologies.</p>
+        <p>  I contributed to improving the data management system by 20% through implementing updates and new technologies.</p>
     </div>
 </div>
 
