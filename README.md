@@ -6,10 +6,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('IMG_20240311_175844_752.jpg'); /* رابط الخلفية */
+            background-image: url('https://github.com/username/repo/blob/main/background-image.jpg'); /* رابط الخلفية */
             background-size: cover;
-            background-repeat: no-repeat; /* منع تكرار الخلفية */
-            background-position: center; /* تثبيت الخلفية في المركز */
+            background-repeat: no-repeat;  /* عدم تكرار الخلفية */
             margin: 0;
             padding: 20px;
         }
@@ -28,7 +27,12 @@
             margin-bottom: 20px;
         }
         .contact-info {
+            display: flex;
+            align-items: center;
             margin-bottom: 20px;
+        }
+        .contact-info .details {
+            flex: 1;
         }
         .experience, .skills, .achievements {
             border: 1px solid #ddd;
@@ -37,11 +41,11 @@
             margin-bottom: 20px;
         }
         .profile-picture {
-            float: right;
-            width: 100px;
-            height: 100px;
+            width: 150px;  /* تعديل حجم الصورة */
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
+            margin-left: 20px;
         }
     </style>
 </head>
@@ -49,10 +53,12 @@
     <div class="container">
         <h1>Oday Hmydat</h1>
         <div class="contact-info">
-            <img src="IMG_20240311_175844_752.jpg" alt="Profile Picture" class="profile-picture">
-            <p><strong>Location:</strong> Koura District, Irbid, Jordan</p>
-            <p><strong>Phone:</strong> +962 780 545 668</p>
-            <p><strong>Email:</strong> <a href="mailto:odyhmydat@gmail.com">odyhmydat@gmail.com</a></p>
+            <div class="details">
+                <p><strong>Location:</strong> Koura District, Irbid, Jordan</p>
+                <p><strong>Phone:</strong> +962 780 545 668</p>
+                <p><strong>Email:</strong> <a href="mailto:odyhmydat@gmail.com">odyhmydat@gmail.com</a></p>
+            </div>
+            <img src="https://github.com/username/repo/blob/main/IMG_20240311_175844_752.jpg" alt="Profile Picture" class="profile-picture">
         </div>
 
         <div class="section education">
@@ -86,7 +92,6 @@
             <h2>Achievements</h2>
             <p>Contributed to improving the data management system by 20%.</p>
         </div>
-
     </div>
 </body>
 </html>
