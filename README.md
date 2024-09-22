@@ -7,14 +7,15 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
+            background-image: url('https://github.com/username/repo/blob/main/background-image.jpg'); /* رابط الخلفية */
+            background-size: cover;
             margin: 0;
             padding: 20px;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.8); /* خلفية شفافة قليلاً */
             border: 2px solid grey;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -39,6 +40,7 @@
             width: 100px;
             height: 100px;
             border-radius: 50%;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -46,7 +48,7 @@
     <div class="container">
         <h1>Oday Hmydat</h1>
         <div class="contact-info">
-            <img src="https://github.com/username/repo/blob/main/profile-picture.png" alt="Profile Picture" class="profile-picture">
+            <img src="https://github.com/username/repo/blob/main/IMG_20240311_175844_752.jpg" alt="Profile Picture" class="profile-picture">
             <p><strong>Location:</strong> Koura District, Irbid, Jordan</p>
             <p><strong>Phone:</strong> +962 780 545 668</p>
             <p><strong>Email:</strong> <a href="mailto:odyhmydat@gmail.com">odyhmydat@gmail.com</a></p>
@@ -83,8 +85,6 @@
             <h2>Achievements</h2>
             <p>Contributed to improving the data management system by 20%.</p>
         </div>
-
-        <p><a href="https://myaccount.google.com/email">My Google Account</a></p>
     </div>
 </body>
 </html>
