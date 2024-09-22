@@ -12,20 +12,21 @@
             margin: 0;
             padding: 20px;
             transition: background-color 0.5s;
+            color: #f0f0f0; /* لون النص */
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8); 
+            background-color: rgba(50, 50, 50, 0.9); /* لون الخلفية */
             border: 2px solid grey;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 1s, transform 1s;
         }
         h1, h2 {
-            color: #333;
+            color: #e0e0e0; /* لون العناوين */
             transition: transform 0.5s;
         }
         .section {
@@ -41,9 +42,9 @@
             padding-right: 20px;
         }
         .experience, .skills, .achievements {
-            border: 1px solid #ddd;
+            border: 1px solid #666; /* لون الحدود */
             padding: 15px;
-            background-color: #f9f9f9;
+            background-color: #333; /* لون الخلفية للقسم */
             margin-bottom: 20px;
         }
         .profile-picture {
@@ -66,7 +67,7 @@
             <div class="details">
                 <p><strong>Location:</strong> Koura District, Irbid, Jordan</p>
                 <p><strong>Phone:</strong> +962 780 545 668</p>
-                <p><strong>Email:</strong> <a href="mailto:odyhmydat@gmail.com">odyhmydat@gmail.com</a></p>
+                <p><strong>Email:</strong> <a href="mailto:odyhmydat@gmail.com" style="color: #f0f0f0;">odyhmydat@gmail.com</a></p>
             </div>
             <img src="IMG_20240311_175844_752.jpg" alt="Profile Picture" class="profile-picture" id="profilePic">
         </div>
@@ -113,7 +114,7 @@
 
         window.onscroll = function() {
             const scrollY = window.scrollY;
-            document.body.style.backgroundColor = `rgba(255, 255, 255, ${Math.min(scrollY / 1000, 0.8)})`;
+            document.body.style.backgroundColor = `rgba(0, 0, 0, ${Math.min(scrollY / 1000, 0.8)})`; /* لون الخلفية */
         };
     </script>
 </body>
