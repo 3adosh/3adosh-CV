@@ -12,12 +12,12 @@
             margin: 0;
             padding: 20px;
             transition: background-color 0.5s;
-            color: #f0f0f0; /* لون النص */
+            color: #f0f0f0;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background-color: rgba(50, 50, 50, 0.9); /* لون الخلفية */
+            background-color: rgba(50, 50, 50, 0.9);
             border: 2px solid grey;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -26,7 +26,7 @@
             transition: opacity 1s, transform 1s;
         }
         h1, h2 {
-            color: #e0e0e0; /* لون العناوين */
+            color: #e0e0e0;
             transition: transform 0.5s;
         }
         .section {
@@ -42,9 +42,9 @@
             padding-right: 20px;
         }
         .experience, .skills, .achievements {
-            border: 1px solid #666; /* لون الحدود */
+            border: 1px solid #666;
             padding: 15px;
-            background-color: #333; /* لون الخلفية للقسم */
+            background-color: #333;
             margin-bottom: 20px;
         }
         .profile-picture {
@@ -114,7 +114,7 @@
 
         window.onscroll = function() {
             const scrollY = window.scrollY;
-            document.body.style.backgroundColor = `rgba(0, 0, 0, ${Math.min(scrollY / 1000, 0.8)})`; /* لون الخلفية */
+            document.body.style.backgroundColor = `rgba(0, 0, 0, ${Math.min(scrollY / 1000, 0.8)})`;
         };
     </script>
 </body>
