@@ -112,8 +112,8 @@
 
         <div class="section certifications">
             <h2>Certifications</h2>
-            <p><strong>Udemy: Complete Data Entry Skills Course</strong></p>
-            <p>This certificate verifies the successful completion of the "Data Entry Skills: A Complete Data Entry Course from Scratch" on 09/26/2024. The course was conducted by Data Tutors and covered comprehensive data entry skills, ensuring proficiency in handling data entry tasks with accuracy and professionalism.</p>
+            <p><strong>Udemy Certification: Advanced Data Entry Skills from Scratch</strong></p>
+            <p>This certification confirms the successful completion of the "Data Entry Skills: A Complete Data Entry Course from Scratch" on 09/26/2024, as instructed by Data Tutors on Udemy.</p>
             <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-7dc80fa7-a40a-4518-b675-f8fe77164c64.jpg?v=1727304543000" target="_blank">
                 <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-7dc80fa7-a40a-4518-b675-f8fe77164c64.jpg?v=1727304543000" alt="Udemy Certificate" class="certification-img">
             </a>
