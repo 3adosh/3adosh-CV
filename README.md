@@ -5,54 +5,52 @@
     <title>Oday Hmydat CV</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             background-image: url('IMG_20240311_175844_752.jpg'); 
             background-size: cover;
             background-repeat: no-repeat;  
             margin: 0;
             padding: 20px;
             transition: background-color 0.5s;
-            color: #f0f0f0;
+            color: #333;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            background-color: rgba(50, 50, 50, 0.9);
-            border: 2px solid grey;
+            background-color: rgba(255, 255, 255, 0.95);
+            border: 1px solid #ccc;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 1s, transform 1s;
         }
         h1, h2 {
-            color: #e0e0e0;
-            transition: transform 0.5s;
+            color: #2c3e50;
+            text-align: center;
         }
         .section {
             margin-bottom: 20px;
         }
         .contact-info {
-            display: grid;
-            grid-template-columns: 1fr auto;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
         }
         .contact-info .details {
             padding-right: 20px;
         }
         .experience, .skills, .achievements, .certifications {
-            border: 1px solid #666;
+            border: 1px solid #ddd;
             padding: 15px;
-            background-color: #333;
+            background-color: #f9f9f9;
             margin-bottom: 20px;
         }
         .profile-picture {
-            width: 300px;  
-            height: 300px;
+            width: 150px;  
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            justify-self: end;  
             transition: transform 0.3s; 
         }
         .profile-picture:hover {
@@ -64,6 +62,13 @@
             margin-top: 10px;
             border-radius: 10px;
         }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -73,7 +78,7 @@
             <div class="details">
                 <p><strong>Location:</strong> Koura District, Irbid, Jordan</p>
                 <p><strong>Phone:</strong> +962 780 545 668</p>
-                <p><strong>Email:</strong> <a href="mailto:odyhmydat@gmail.com" style="color: #f0f0f0;">odyhmydat@gmail.com</a></p>
+                <p><strong>Email:</strong> <a href="mailto:odyhmydat@gmail.com">odyhmydat@gmail.com</a></p>
             </div>
             <img src="IMG_20240311_175844_752.jpg" alt="Profile Picture" class="profile-picture" id="profilePic">
         </div>
@@ -118,6 +123,8 @@
                 <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-7dc80fa7-a40a-4518-b675-f8fe77164c64.jpg?v=1727304543000" alt="Udemy Certificate" class="certification-img">
             </a>
         </div>
+
+        <p>Download PDF: <a href="path-to-your-cv.pdf" target="_blank">Click here</a></p>
     </div>
 
     <script>
