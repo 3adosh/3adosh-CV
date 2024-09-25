@@ -41,7 +41,7 @@
         .contact-info .details {
             padding-right: 20px;
         }
-        .experience, .skills, .achievements, .certificate {
+        .experience, .skills, .achievements, .certifications {
             border: 1px solid #666;
             padding: 15px;
             background-color: #333;
@@ -58,9 +58,11 @@
         .profile-picture:hover {
             transform: scale(1.1); 
         }
-        .certificate img {
-            width: 100%; /* Adjust width as needed */
-            max-width: 600px; /* Set a maximum width */
+        .certification-img {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 10px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -108,12 +110,13 @@
             <p>Contributed to improving the data management system by 20%.</p>
         </div>
 
-        **<div class="section certificate">**
-           **<h2>Udemy Course Certificate</h2>**
-           **<img src="https://udemy-certificate.s3.amazonaws.com/image/UC-7dc80fa7-a40a-4518-b675-f8fe77164c64.jpg?v=1727304543000" alt="Udemy Certificate">**
-           **<p>This certificate is awarded for completing the course on web development.</p>**
-       **</div>**
-
+        <div class="section certifications">
+            <h2>Certifications</h2>
+            <p><strong>Udemy: Complete Python Bootcamp</strong></p>
+            <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-7dc80fa7-a40a-4518-b675-f8fe77164c64.jpg?v=1727304543000" target="_blank">
+                <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-7dc80fa7-a40a-4518-b675-f8fe77164c64.jpg?v=1727304543000" alt="Udemy Certificate" class="certification-img">
+            </a>
+        </div>
     </div>
 
     <script>
