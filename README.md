@@ -127,7 +127,7 @@
 
         <div class="section">
             <h2>References</h2>
-            <p><a href="CV.pdf" target="_blank">View Udemy Certificate</a></p>
+            <p><a href="(https://udemy-certificate.s3.amazonaws.com/image/UC-7dc80fa7-a40a-4518-b675-f8fe77164c64.jpg?v=1727304543000)" target="_blank">View Udemy Certificate</a></p>
         </div>
     </div>
 
