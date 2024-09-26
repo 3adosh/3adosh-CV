@@ -51,7 +51,7 @@
             <p>Koura District, Irbid, Jordan</p>
             <p>+962 780 545 668</p>
             <p><a href="mailto:odyhmydat@gmail.com">odyhmydat@gmail.com</a></p>
-            <p><a href="#">LinkedIn Profile</a></p>
+            <p><a href="#">linkedin.com/in/oday-hmydat/</a></p>
         </div>
 
         <div class="section">
@@ -70,16 +70,16 @@
             <h2>Experience</h2>
             <p><strong>Data Entry Assistant</strong></p>
             <p>Computer and Information Center, Yarmouk University</p>
-            <p>Month Year – Month Year</p>
+            <p> April 2023 – June 2024 </p>
             <ul>
                 <li>Enhanced the data management system efficiency by 20% through the implementation of updates and new technologies.</li>
                 <li>Entered and maintained over 1,000 records accurately, ensuring data integrity and confidentiality.</li>
             </ul>
             <p><strong>Problem Analyst</strong></p>
             <p>Computer Centre, Yarmouk University</p>
-            <p>Month Year – Month Year</p>
+            <p> April 2023 – June 2024 </p>
             <ul>
-                <li>Resolved technical issues for over 100 students, including password resets and email access problems.</li>
+                <li>Resolved technical issues for over 500 students, including password resets and email access problems.</li>
                 <li>Assisted students in accessing external courses (e.g., Cisco), improving their learning experience and satisfaction.</li>
             </ul>
         </div>
