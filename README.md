@@ -35,9 +35,9 @@
             padding-bottom: 10px;
         }
 
-        /* Customizing the bullet points */
+
         ul {
-            list-style-type: none; /* Remove default bullets */
+            list-style-type: none; 
             padding: 0;
         }
         ul li {
@@ -46,9 +46,9 @@
             position: relative;
         }
         ul li:before {
-            content: "•"; /* Custom bullet point */
-            color: #003366; /* Custom color */
-            font-size: 1.5em; /* Adjust size if needed */
+            content: "•"; 
+            color: #003366; 
+            font-size: 1.5em; 
             position: absolute;
             left: 0;
             top: 0;
@@ -128,6 +128,18 @@
         <div class="section">
             <h2>References</h2>
             <p><a href="(https://udemy-certificate.s3.amazonaws.com/image/UC-7dc80fa7-a40a-4518-b675-f8fe77164c64.jpg?v=1727304543000)" target="_blank">View Udemy Certificate</a></p>
+        </div>
+
+        
+        <div class="section">
+            <h2>Download My CV</h2>
+            <p>
+                <a href="CV.pdf" download>
+                    <button style="background-color: #003366; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+                        Download CV
+                    </button>
+                </a>
+            </p>
         </div>
     </div>
 
