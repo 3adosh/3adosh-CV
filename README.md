@@ -88,10 +88,14 @@
             <h2>Skills</h2>
             <ul>
                 <li>Proficient in Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+                <li>Advanced skills in Microsoft Excel: Autofill, Flash Fill, Pivot Tables, Sorting & Filtering</li>
                 <li>Strong data analysis capabilities</li>
                 <li>Excellent IT troubleshooting skills</li>
-                <li>Attention to detail and accuracy in data entry</li>
+                <li>Familiar with Google Workspace: File Management with Google Drive and Google Sheets</li>
+                <li>Experienced in using AI tools like ChatGPT to enhance productivity</li>
                 <li>Effective communication and interpersonal skills</li>
+                <li>Attention to detail and commitment to accuracy in data management</li>
+                <li>Strong time management skills for multitasking</li>
             </ul>
         </div>
 
