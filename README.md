@@ -5,139 +5,115 @@
     <title>Oday Hmydat CV</title>
     <style>
         body {
-            font-family: 'Open Sans', sans-serif;
-            background-image: url('IMG_20240311_175844_752.jpg'); 
-            background-size: cover;
-            background-repeat: no-repeat;  
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            transition: background-color 0.5s;
+            padding: 0;
+            background-color: #f4f4f9;
             color: #333;
         }
         .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.95);
-            border: 1px solid #ccc;
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
             padding: 20px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s, transform 1s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #2c3e50;
+        h1, h2, h3 {
+            color: #003366;
+        }
+        .contact-info {
             text-align: center;
+        }
+        .contact-info p {
+            margin: 5px 0;
         }
         .section {
             margin-bottom: 20px;
         }
-        .contact-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .section h2 {
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
         }
-        .contact-info .details {
-            padding-right: 20px;
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
-        .experience, .skills, .achievements, .certifications {
-            border: 1px solid #ddd;
-            padding: 15px;
-            background-color: #f9f9f9;
-            margin-bottom: 20px;
-        }
-        .profile-picture {
-            width: 150px;  
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            transition: transform 0.3s; 
-        }
-        .profile-picture:hover {
-            transform: scale(1.1); 
-        }
-        .certification-img {
-            width: 100%;
-            max-width: 400px;
-            margin-top: 10px;
-            border-radius: 10px;
-        }
-        a {
-            text-decoration: none;
-            color: #3498db;
-        }
-        a:hover {
-            text-decoration: underline;
+        li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container" id="container">
-        <h1>Oday Hmydat</h1>
+
+    <div class="container">
         <div class="contact-info">
-            <div class="details">
-                <p><strong>Location:</strong> Koura District, Irbid, Jordan</p>
-                <p><strong>Phone:</strong> +962 780 545 668</p>
-                <p><strong>Email:</strong> <a href="mailto:odyhmydat@gmail.com">odyhmydat@gmail.com</a></p>
-            </div>
-            <img src="IMG_20240311_175844_752.jpg" alt="Profile Picture" class="profile-picture" id="profilePic">
+            <h1>Oday Hmydat</h1>
+            <p>Koura District, Irbid, Jordan</p>
+            <p>+962 780 545 668</p>
+            <p><a href="mailto:odyhmydat@gmail.com">odyhmydat@gmail.com</a></p>
+            <p><a href="#">LinkedIn Profile</a></p>
         </div>
 
-        <div class="section education">
+        <div class="section">
+            <h2>Objective</h2>
+            <p>Detail-oriented and motivated Cybersecurity student from the third cohort at Yarmouk University, with hands-on experience in data entry and IT troubleshooting. Seeking to leverage my skills in a data entry role to contribute to efficient data management and support organizational goals.</p>
+        </div>
+
+        <div class="section">
             <h2>Education</h2>
             <p><strong>Yarmouk University</strong></p>
-            <p>Cybersecurity, Third Cohort</p>
+            <p>Bachelor of Cybersecurity, Third Cohort</p>
             <p>Expected Graduation: 2025</p>
         </div>
 
-        <div class="section experience">
+        <div class="section">
             <h2>Experience</h2>
             <p><strong>Data Entry Assistant</strong></p>
             <p>Computer and Information Center, Yarmouk University</p>
-            <p>Contributed to improving the data management system by 20% through implementing updates and new technologies.</p>
-
+            <p>Month Year – Month Year</p>
+            <ul>
+                <li>Enhanced the data management system efficiency by 20% through the implementation of updates and new technologies.</li>
+                <li>Entered and maintained over 1,000 records accurately, ensuring data integrity and confidentiality.</li>
+            </ul>
             <p><strong>Problem Analyst</strong></p>
             <p>Computer Centre, Yarmouk University</p>
-            <p>Resolved usage errors for students and assisted with external courses like Cisco.</p>
-        </div>
-
-        <div class="section skills">
-            <h2>Skills</h2>
+            <p>Month Year – Month Year</p>
             <ul>
-                <li>Proficient in Microsoft Office Suite</li>
-                <li>Data Analysis</li>
-                <li>IT Troubleshooting</li>
+                <li>Resolved technical issues for over 100 students, including password resets and email access problems.</li>
+                <li>Assisted students in accessing external courses (e.g., Cisco), improving their learning experience and satisfaction.</li>
             </ul>
         </div>
 
-        <div class="section achievements">
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Proficient in Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+                <li>Strong data analysis capabilities</li>
+                <li>Excellent IT troubleshooting skills</li>
+                <li>Attention to detail and accuracy in data entry</li>
+                <li>Effective communication and interpersonal skills</li>
+            </ul>
+        </div>
+
+        <div class="section">
             <h2>Achievements</h2>
-            <p>Contributed to improving the data management system by 20%.</p>
+            <ul>
+                <li>Successfully improved the university's data management system efficiency by 20%.</li>
+                <li>Recognized for outstanding problem-solving abilities in assisting students with technical issues.</li>
+            </ul>
         </div>
 
-        <div class="section certifications">
+        <div class="section">
             <h2>Certifications</h2>
-            <p><strong>Udemy Certification: Advanced Data Entry Skills from Scratch</strong></p>
-            <p>This certification confirms the successful completion of the "Data Entry Skills: A Complete Data Entry Course from Scratch" on 09/26/2024, as instructed by Data Tutors on Udemy.</p>
-            <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-7dc80fa7-a40a-4518-b675-f8fe77164c64.jpg?v=1727304543000" target="_blank">
-                <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-7dc80fa7-a40a-4518-b675-f8fe77164c64.jpg?v=1727304543000" alt="Udemy Certificate" class="certification-img">
-            </a>
+            <p><strong>Udemy Course Certificate</strong></p>
+            <p>Completed a course on [specific course name], enhancing my skills in [relevant skills related to the course].</p>
         </div>
 
-        <p>Download PDF: <a href="path-to-your-cv.pdf" target="_blank">Click here</a></p>
+        <div class="section">
+            <h2>References</h2>
+            <p>Available upon request</p>
+        </div>
     </div>
 
-    <script>
-        window.onload = function() {
-            const container = document.getElementById('container');
-            container.style.opacity = 1;
-            container.style.transform = 'translateY(0)';
-        };
-
-        window.onscroll = function() {
-            const scrollY = window.scrollY;
-            document.body.style.backgroundColor = `rgba(0, 0, 0, ${Math.min(scrollY / 1000, 0.8)})`;
-        };
-    </script>
 </body>
 </html>
