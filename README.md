@@ -122,7 +122,7 @@
         <div class="section">
             <h2>Certifications</h2>
             <p><strong>Udemy Course Certificate</strong></p>
-            <p>Completed a course on [specific course name], enhancing my skills in [relevant skills related to the course].</p>
+            <p>Completed a course on Data Entry Skills: A Complete Data Entry Course from Scratch, enhancing my skills in : </p>
         </div>
 
         <div class="section">
