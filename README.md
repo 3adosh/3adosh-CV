@@ -34,12 +34,24 @@
             border-bottom: 2px solid #003366;
             padding-bottom: 10px;
         }
+
+        /* Customizing the bullet points */
         ul {
-            list-style-type: none;
+            list-style-type: none; /* Remove default bullets */
             padding: 0;
         }
-        li {
+        ul li {
             margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        ul li:before {
+            content: "•"; /* Custom bullet point */
+            color: #003366; /* Custom color */
+            font-size: 1.5em; /* Adjust size if needed */
+            position: absolute;
+            left: 0;
+            top: 0;
         }
     </style>
 </head>
