@@ -122,12 +122,12 @@
         <div class="section">
             <h2>Certifications</h2>
             <p><strong>Udemy Course Certificate</strong></p>
-            <p>Completed a course on Data Entry Skills , Enhance my skills in using AI tools and using advanced skills in Microsoft Excel and Google Workspace : </p>
+            <p>Completed a course on Data Entry Skills: A Complete Data Entry Course from Scratch, enhancing my skills in : </p>
         </div>
 
         <div class="section">
             <h2>References</h2>
-            <p>Available upon request</p>
+            <p><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-7dc80fa7-a40a-4518-b675-f8fe77164c64.jpg?v=1727304543000" target="_blank">View Udemy Certificate</a></p>
         </div>
     </div>
 
