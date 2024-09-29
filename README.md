@@ -19,7 +19,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            margin: 0; /* أضف هذه السطر */
+            margin: 0; /* إزالة الهامش */
         }
         h2, h3 {
             color: #003366;
@@ -55,7 +55,7 @@
             top: 0;
         }
         .hidden {
-            display: none; /* إخفاء اسم المستودع */
+            display: none; /* إخفاء 3adosh-CV */
         }
     </style>
 </head>
