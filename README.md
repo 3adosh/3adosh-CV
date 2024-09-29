@@ -19,7 +19,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            visibility: hidden; /* إخفاء اسم المستودع لكن الحفاظ على مكانه */
+            margin: 0; /* أضف هذه السطر */
         }
         h2, h3 {
             color: #003366;
@@ -54,6 +54,9 @@
             left: 0;
             top: 0;
         }
+        .hidden {
+            display: none; /* إخفاء اسم المستودع */
+        }
     </style>
 </head>
 <body>
@@ -61,6 +64,7 @@
     <div class="container">
         <div class="contact-info">
             <h1>Oday Hmydat</h1>
+            <p class="hidden">3adosh-CV</p> <!-- إخفاء اسم المستودع -->
             <p>Koura District, Irbid, Jordan</p>
             <p>+962 780 545 668</p>
             <p><a href="mailto:odyhmydat@gmail.com">odyhmydat@gmail.com</a></p>
