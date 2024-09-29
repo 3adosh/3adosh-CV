@@ -18,7 +18,10 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2, h3 {
+        h1 {
+            display: none; /* إخفاء اسم المستودع */
+        }
+        h2, h3 {
             color: #003366;
         }
         .contact-info {
@@ -52,14 +55,6 @@
             top: 0;
         }
     </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const repoName = document.querySelector("3adosh-CV");
-            if (repoName) {
-                repoName.style.display = "none"; 
-            }
-        });
-    </script>
 </head>
 <body>
 
