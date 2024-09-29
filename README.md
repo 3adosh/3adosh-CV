@@ -4,9 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oday Hmydat CV</title>
     <style>
-        header .mr-2, header .d-flex { 
-  display: none; 
-}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -37,8 +34,6 @@
             border-bottom: 2px solid #003366;
             padding-bottom: 10px;
         }
-
-
         ul {
             list-style-type: none; 
             padding: 0;
@@ -57,6 +52,14 @@
             top: 0;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const repoName = document.querySelector("3adosh-CV");
+            if (repoName) {
+                repoName.style.display = "none"; 
+            }
+        });
+    </script>
 </head>
 <body>
 
@@ -125,14 +128,13 @@
         <div class="section">
             <h2>Certifications</h2>
             <p><strong>Udemy Course Certificate</strong></p>
-            <p>Completed a course on Data Entry Skills , Enhance my skills in using AI tools and using advanced skills in Microsoft Excel and Google Workspace . </p>
+            <p>Completed a course on Data Entry Skills, Enhance my skills in using AI tools and using advanced skills in Microsoft Excel and Google Workspace.</p>
         </div>
 
         <div class="section">
             <h2>References</h2>
             <p><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-7dc80fa7-a40a-4518-b675-f8fe77164c64.jpg?v=1727304543000" target="_blank">View Udemy Certificate</a></p>
         </div>
-
 
         <div class="section">
             <h2>Download My CV</h2>
