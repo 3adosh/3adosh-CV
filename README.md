@@ -19,7 +19,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            display: none; /* إخفاء اسم المستودع */
+            visibility: hidden; /* إخفاء اسم المستودع لكن الحفاظ على مكانه */
         }
         h2, h3 {
             color: #003366;
