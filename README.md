@@ -55,7 +55,7 @@
             top: 0;
         }
         .hidden {
-            display: none; /* إخفاء 3adosh-CV */
+            display: none; 
         }
     </style>
 </head>
@@ -64,7 +64,7 @@
     <div class="container">
         <div class="contact-info">
             <h1>Oday Hmydat</h1>
-            <p class="hidden">3adosh-CV</p> <!-- إخفاء اسم المستودع -->
+            <p class="hidden">3adosh-CV</p> 
             <p>Koura District, Irbid, Jordan</p>
             <p>+962 780 545 668</p>
             <p><a href="mailto:odyhmydat@gmail.com">odyhmydat@gmail.com</a></p>
@@ -138,7 +138,7 @@
         <div class="section">
             <h2>Download My CV</h2>
             <p>
-                <a href="CV.pdf" download>
+                <a href="CV.docx" download>
                     <button style="background-color: #003366; color: white; padding: 10px 20px; border: none; cursor: pointer;">
                         Download CV
                     </button>
