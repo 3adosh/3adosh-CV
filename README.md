@@ -5,12 +5,13 @@
   <title>Oday Hmydat - Professional Web CV</title>
   <style>
     :root {
-      --primary-color: #2c3e50;
-      --secondary-color: #3498db;
-      --accent-color: #e74c3c;
+      --primary-color: #1a3a6e; /* أزرق داكن مفتح قليلاً */
+      --secondary-color: #2a4a8a; /* أزرق داكن */
+      --header-bg: #1a3a6e; /* لون خلفية الهيدر */
+      --white: #ffffff;
       --light-bg: #f8f9fa;
-      --dark-text: #2c3e50;
-      --light-text: #7f8c8d;
+      --dark-text: #333333; /* لون النص الأساسي */
+      --light-text: #777777;
     }
     
     body {
@@ -32,14 +33,14 @@
     }
     
     .header {
-      background-color: var(--primary-color);
-      color: white;
+      background-color: var(--header-bg);
       padding: 30px 40px;
     }
     
     .header h1 {
       margin: 0;
       font-size: 2.2em;
+      color: var(--white); /* الاسم باللون الأبيض */
     }
     
     .header .contact-info {
@@ -47,6 +48,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
+      color: var(--white);
     }
     
     .header .contact-info span {
@@ -56,7 +58,12 @@
     }
     
     .header .contact-info i {
-      color: var(--secondary-color);
+      color: var(--white);
+    }
+    
+    .header .contact-info a {
+      color: var(--white);
+      text-decoration: underline;
     }
     
     .content {
@@ -65,7 +72,7 @@
     
     h2 {
       color: var(--primary-color);
-      border-bottom: 2px solid var(--secondary-color);
+      border-bottom: 2px solid var(--primary-color);
       padding-bottom: 8px;
       margin-top: 30px;
       font-size: 1.5em;
@@ -110,7 +117,7 @@
     }
     
     a:hover {
-      color: var(--accent-color);
+      color: var(--primary-color);
       text-decoration: underline;
     }
     
@@ -125,6 +132,7 @@
       padding: 5px 12px;
       border-radius: 15px;
       font-size: 0.9em;
+      border: 1px solid #e0e0e0;
     }
     
     .certification {
@@ -138,18 +146,16 @@
     
     .download-btn {
       display: inline-block;
-      background-color: var(--secondary-color);
+      background-color: var(--primary-color);
       color: white;
       padding: 10px 20px;
       border-radius: 5px;
       margin-top: 10px;
       transition: background-color 0.3s;
-      text-decoration: none;
     }
     
     .download-btn:hover {
-      background-color: var(--primary-color);
-      text-decoration: none;
+      background-color: var(--secondary-color);
     }
     
     .download-btn i {
@@ -182,6 +188,7 @@
     </div>
     
     <div class="content">
+      <!-- باقي المحتوى يبقى كما هو بدون تغيير -->
       <div class="section">
         <h2>Objective</h2>
         <p>
@@ -282,10 +289,9 @@
       </div>
       
       <div class="section">
-        <h2>References</h2>
-        <p>Connect with me on <a href="https://linkedin.com/in/oday-hmydat" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> or download my full CV:</p>
-        <a href="path/to/your-cv.pdf" download class="download-btn">
-          <i class="fas fa-download"></i> Download PDF CV
+        <h2>Download CV</h2>
+        <a href="Oday-Hmydat-CV.pdf" download class="download-btn">
+          <i class="fas fa-file-pdf"></i> Download PDF CV
         </a>
       </div>
     </div>
