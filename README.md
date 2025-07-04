@@ -2,145 +2,104 @@
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Oday Hmydat - CV</title>
+  <title>Oday Hmydat - Web CV</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 20px;
-      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      padding: 30px;
       color: #333;
     }
     .container {
-      background: #fff;
       max-width: 850px;
       margin: auto;
-      padding: 30px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      border-radius: 10px;
-    }
-    h1, h2 {
-      colour: #0a3d62;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
     }
     h2 {
-      margin-top: 30px;
-      font-size: 22px;
-      border-bottom: 1px solid #ccc;
+      color: #003366;
+      border-bottom: 2px solid #003366;
       padding-bottom: 5px;
+      margin-top: 40px;
+    }
+    p, ul {
+      line-height: 1.6;
+    }
+    .info p {
+      font-size: 16px;
+      margin-bottom: 20px;
     }
     ul {
-      margin: 0;
+      margin-top: 0;
       padding-left: 20px;
     }
-    .section {
-      margin-bottom: 25px;
-    }
-    .info {
-      font-size: 14px;
-      colour: #555;
-    }
-    .bold {
-      font-weight: bold;
+    a {
+      color: #003366;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Oday Hmydat</h1>
     <div class="info">
-      Koura District, Irbid, Jordan<br>
-      +962 780 545 668 | odyhmydat@gmail.com<br>
-      <a href="https://linkedin.com/in/oday-hmydat/" target="_blank">linkedin.com/in/oday-hmydat</a>
-    </div>
-
-    <div class="section">
-      <h2>Objective</h2>
       <p>
-        Diligent and forward-thinking Cybersecurity undergraduate at Yarmouk University (Third Cohort), with a strong foundation in data entry, system administration, and technical troubleshooting. I aim to contribute to organisational efficiency and data integrity through meticulous data management and innovative problem-solving.
+        <strong>Oday Hmydat</strong><br>
+        Koura District, Irbid, Jordan<br>
+        +962 780 545 668 | odyhmydat@gmail.com<br>
+        <a href="https://linkedin.com/in/oday-hmydat" target="_blank">linkedin.com/in/oday-hmydat</a>
       </p>
     </div>
 
-    <div class="section">
-      <h2>Education</h2>
-      <p><span class="bold">Yarmouk University</span><br>
-        BSc in Cybersecurity – Third Cohort<br>
-        Expected Graduation: 2025
-      </p>
-    </div>
+    <h2>Objective</h2>
+    <p>
+      Detail-oriented Cybersecurity student (Third Cohort – Yarmouk University) with strong data entry and troubleshooting skills, and certifications in Cisco and NVIDIA technologies. Looking to leverage my abilities to support IT operations and improve organisational systems.
+    </p>
 
-    <div class="section">
-      <h2>Experience</h2>
-      <p><span class="bold">Data Entry Assistant</span><br>
-        Computer & Information Centre, Yarmouk University<br>
-        April 2023 – June 2024
-      </p>
-      <ul>
-        <li>Enhanced data management system efficiency by 20% through the adoption of modern technologies.</li>
-        <li>Entered and maintained over 1,000 records with a strong focus on data integrity and confidentiality.</li>
-      </ul>
+    <h2>Education</h2>
+    <p>
+      <strong>Yarmouk University</strong><br>
+      Bachelor of Cybersecurity, Expected 2025
+    </p>
 
-      <p><span class="bold">Problem Analyst</span><br>
-        Computer Centre, Yarmouk University<br>
-        April 2023 – June 2024
-      </p>
-      <ul>
-        <li>Resolved over 500 technical issues, including account recovery and email access problems.</li>
-        <li>Supported students in accessing Cisco and external platforms, improving learning outcomes.</li>
-      </ul>
+    <h2>Experience</h2>
+    <p><strong>Data Entry Assistant</strong> – Yarmouk University<br>Apr 2023 – Present</p>
+    <ul>
+      <li>Improved system efficiency by 20% via new technologies.</li>
+      <li>Entered and managed 1,000+ student records accurately.</li>
+    </ul>
 
-      <p><span class="bold">Cybersecurity Workshop Member</span><br>
-        Yarmouk University<br>
-        2023 – Present
-      </p>
-      <ul>
-        <li>Engaged in practical cybersecurity labs including SOC, Wireshark, Packet Tracer, and Linux systems.</li>
-        <li>Participated in group threat analysis activities, sharpening critical incident response skills.</li>
-      </ul>
-    </div>
+    <p><strong>Problem Analyst</strong> – Yarmouk University<br>Apr 2023 – Jun 2024</p>
+    <ul>
+      <li>Resolved 500+ student issues including password recovery and access support.</li>
+      <li>Supported Cisco e-learning access and troubleshooting.</li>
+    </ul>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>Microsoft Office Suite (Excel, Word, PowerPoint) – Advanced Excel (Pivot Tables, Flash Fill, Sorting & Filtering)</li>
-        <li>Google Workspace – Efficient file & sheet management, collaboration</li>
-        <li>Excellent IT troubleshooting and customer support capabilities</li>
-        <li>Proficient in Cisco Packet Tracer for network simulation and configuration</li>
-        <li>Working knowledge of Linux (Kali, GNOME environment)</li>
-        <li>AI Tools: Skilled in using ChatGPT and Google Gemini to enhance productivity</li>
-        <li>Strong verbal and written communication in English and Arabic</li>
-        <li>Highly organised with excellent time management</li>
-      </ul>
-    </div>
+    <h2>Certifications</h2>
+    <ul>
+      <li>CCNA: Introduction to Networks – Cisco (Jun 2025)</li>
+      <li>CCNA: Switching, Routing, and Wireless Essentials – Cisco (Jun 2025)</li>
+      <li>CCNA: Enterprise Networking, Security, and Automation – Cisco (Jun 2025)</li>
+      <li>Fundamentals of Deep Learning – NVIDIA (Dec 2024)</li>
+      <li>Building Transformer-Based NLP Applications – NVIDIA (May 2025)</li>
+      <li>Accelerating CUDA C++ with Multiple GPUs – NVIDIA (Jan 2024)</li>
+      <li>Fundamentals of Accelerated Computing with CUDA – NVIDIA (Jan 2024)</li>
+      <li>Data Entry Skills – Udemy</li>
+    </ul>
 
-    <div class="section">
-      <h2>Achievements</h2>
-      <ul>
-        <li>Improved data management efficiency by 20% at Yarmouk University’s IT Centre.</li>
-        <li>Commended for outstanding support during university’s transition to Cisco e-learning platforms.</li>
-        <li>Developed troubleshooting protocols that reduced student issue resolution time by 40%.</li>
-      </ul>
-    </div>
+    <h2>Skills</h2>
+    <ul>
+      <li>Advanced Excel, Microsoft Office, Google Workspace</li>
+      <li>IT Support & Troubleshooting, Linux (Kali GNOME)</li>
+      <li>Cisco Packet Tracer, ChatGPT for productivity</li>
+      <li>Strong communication and time management</li>
+    </ul>
 
-    <div class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>CCNA: Introduction to Networks – Cisco Networking Academy (Issued June 2025)</li>
-        <li>CCNA: Switching, Routing & Wireless Essentials – Cisco Networking Academy (Issued June 2025)</li>
-        <li>CCNA: Enterprise Networking, Security & Automation – Cisco Networking Academy (Issued June 2025)</li>
-        <li>Udemy Certificate – Data Entry Skills with Excel, Google Workspace & AI Tools</li>
-      </ul>
-    </div>
+    <h2>Achievements</h2>
+    <ul>
+      <li>Enhanced data system efficiency by 20% at Yarmouk University.</li>
+      <li>Recognised for excellent student technical support and issue resolution.</li>
+    </ul>
 
-    <div class="section">
-      <h2>References</h2>
-      <p>Available upon request.</p>
-    </div>
+    <h2>References</h2>
+    <p>Available upon request.</p>
   </div>
 </body>
 </html>
