@@ -1,105 +1,272 @@
-
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
-  <title>Oday Hmydat - Web CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oday Hmydat - Professional Web CV</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      padding: 30px;
-      color: #333;
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #3498db;
+      --accent-color: #e74c3c;
+      --light-bg: #f8f9fa;
+      --dark-text: #2c3e50;
+      --light-text: #7f8c8d;
     }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+    }
+    
     .container {
       max-width: 850px;
-      margin: auto;
+      margin: 40px auto;
+      background: white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
     }
+    
+    .header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 30px 40px;
+    }
+    
+    .header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+    
+    .header .contact-info {
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    
+    .header .contact-info span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .header .contact-info i {
+      color: var(--secondary-color);
+    }
+    
+    .content {
+      padding: 30px 40px;
+    }
+    
     h2 {
-      color: #003366;
-      border-bottom: 2px solid #003366;
-      padding-bottom: 5px;
-      margin-top: 40px;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--secondary-color);
+      padding-bottom: 8px;
+      margin-top: 30px;
+      font-size: 1.5em;
     }
-    p, ul {
-      line-height: 1.6;
+    
+    .section {
+      margin-bottom: 25px;
     }
-    .info p {
-      font-size: 16px;
+    
+    .job, .education {
       margin-bottom: 20px;
     }
+    
+    .job-title, .degree {
+      font-weight: bold;
+      font-size: 1.1em;
+      color: var(--primary-color);
+    }
+    
+    .company, .university {
+      font-weight: bold;
+    }
+    
+    .date {
+      color: var(--light-text);
+      font-style: italic;
+      font-size: 0.9em;
+    }
+    
     ul {
-      margin-top: 0;
       padding-left: 20px;
     }
+    
+    li {
+      margin-bottom: 8px;
+    }
+    
     a {
-      color: #003366;
+      color: var(--secondary-color);
       text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    a:hover {
+      color: var(--accent-color);
+      text-decoration: underline;
+    }
+    
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .skill {
+      background-color: var(--light-bg);
+      padding: 5px 12px;
+      border-radius: 15px;
+      font-size: 0.9em;
+    }
+    
+    .certification {
+      margin-bottom: 10px;
+    }
+    
+    .certification .issuer {
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        margin: 0;
+        border-radius: 0;
+      }
+      
+      .header, .content {
+        padding: 20px;
+      }
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <div class="container">
-    <div class="info">
-      <p>
-        <strong>Oday Hmydat</strong><br>
-        Koura District, Irbid, Jordan<br>
-        +962 780 545 668 | odyhmydat@gmail.com<br>
-        <a href="https://linkedin.com/in/oday-hmydat" target="_blank">linkedin.com/in/oday-hmydat</a>
-      </p>
+    <div class="header">
+      <h1>Oday Hmydat</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-map-marker-alt"></i> Koura District, Irbid, Jordan</span>
+        <span><i class="fas fa-phone"></i> +962 780 545 668</span>
+        <span><i class="fas fa-envelope"></i> odyhmydat@gmail.com</span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/oday-hmydat" target="_blank">linkedin.com/in/oday-hmydat</a></span>
+      </div>
     </div>
-
-    <h2>Objective</h2>
-    <p>
-      Detail-oriented Cybersecurity student (Third Cohort – Yarmouk University) with strong data entry and troubleshooting skills, and certifications in Cisco and NVIDIA technologies. Looking to leverage my abilities to support IT operations and improve organisational systems.
-    </p>
-
-    <h2>Education</h2>
-    <p>
-      <strong>Yarmouk University</strong><br>
-      Bachelor of Cybersecurity, Expected 2025
-    </p>
-
-    <h2>Experience</h2>
-    <p><strong>Data Entry Assistant</strong> – Yarmouk University<br>Apr 2023 – Present</p>
-    <ul>
-      <li>Improved system efficiency by 20% via new technologies.</li>
-      <li>Entered and managed 1,000+ student records accurately.</li>
-    </ul>
-
-    <p><strong>Problem Analyst</strong> – Yarmouk University<br>Apr 2023 – Jun 2024</p>
-    <ul>
-      <li>Resolved 500+ student issues including password recovery and access support.</li>
-      <li>Supported Cisco e-learning access and troubleshooting.</li>
-    </ul>
-
-    <h2>Certifications</h2>
-    <ul>
-      <li>CCNA: Introduction to Networks – Cisco (Jun 2025)</li>
-      <li>CCNA: Switching, Routing, and Wireless Essentials – Cisco (Jun 2025)</li>
-      <li>CCNA: Enterprise Networking, Security, and Automation – Cisco (Jun 2025)</li>
-      <li>Fundamentals of Deep Learning – NVIDIA (Dec 2024)</li>
-      <li>Building Transformer-Based NLP Applications – NVIDIA (May 2025)</li>
-      <li>Accelerating CUDA C++ with Multiple GPUs – NVIDIA (Jan 2024)</li>
-      <li>Fundamentals of Accelerated Computing with CUDA – NVIDIA (Jan 2024)</li>
-      <li>Data Entry Skills – Udemy</li>
-    </ul>
-
-    <h2>Skills</h2>
-    <ul>
-      <li>Advanced Excel, Microsoft Office, Google Workspace</li>
-      <li>IT Support & Troubleshooting, Linux (Kali GNOME)</li>
-      <li>Cisco Packet Tracer, ChatGPT for productivity</li>
-      <li>Strong communication and time management</li>
-    </ul>
-
-    <h2>Achievements</h2>
-    <ul>
-      <li>Enhanced data system efficiency by 20% at Yarmouk University.</li>
-      <li>Recognised for excellent student technical support and issue resolution.</li>
-    </ul>
-
-    <h2>References</h2>
-    <p>Available upon request.</p>
+    
+    <div class="content">
+      <div class="section">
+        <h2>Objective</h2>
+        <p>
+          Detail-oriented Cybersecurity student (Third Cohort – Yarmouk University) with strong data entry and troubleshooting skills, and certifications in Cisco and NVIDIA technologies. Looking to leverage my abilities to support IT operations and improve organisational systems.
+        </p>
+      </div>
+      
+      <div class="section">
+        <h2>Education</h2>
+        <div class="education">
+          <div class="degree">Bachelor of Cybersecurity</div>
+          <div class="university">Yarmouk University</div>
+          <div class="date">Expected Graduation: 2025</div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2>Experience</h2>
+        <div class="job">
+          <div class="job-title">Data Entry Assistant</div>
+          <div class="company">Yarmouk University</div>
+          <div class="date">Apr 2023 – Present</div>
+          <ul>
+            <li>Improved system efficiency by 20% via new technologies.</li>
+            <li>Entered and managed 1,000+ student records accurately.</li>
+          </ul>
+        </div>
+        
+        <div class="job">
+          <div class="job-title">Problem Analyst</div>
+          <div class="company">Yarmouk University</div>
+          <div class="date">Apr 2023 – Jun 2024</div>
+          <ul>
+            <li>Resolved 500+ student issues including password recovery and access support.</li>
+            <li>Supported Cisco e-learning access and troubleshooting.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2>Certifications</h2>
+        <div class="certification">
+          <div class="cert-name">CCNA: Introduction to Networks</div>
+          <div class="issuer">Cisco (Jun 2025)</div>
+        </div>
+        <div class="certification">
+          <div class="cert-name">CCNA: Switching, Routing, and Wireless Essentials</div>
+          <div class="issuer">Cisco (Jun 2025)</div>
+        </div>
+        <div class="certification">
+          <div class="cert-name">CCNA: Enterprise Networking, Security, and Automation</div>
+          <div class="issuer">Cisco (Jun 2025)</div>
+        </div>
+        <div class="certification">
+          <div class="cert-name">Fundamentals of Deep Learning</div>
+          <div class="issuer">NVIDIA (Dec 2024)</div>
+        </div>
+        <div class="certification">
+          <div class="cert-name">Building Transformer-Based NLP Applications</div>
+          <div class="issuer">NVIDIA (May 2025)</div>
+        </div>
+        <div class="certification">
+          <div class="cert-name">Accelerating CUDA C++ with Multiple GPUs</div>
+          <div class="issuer">NVIDIA (Jan 2024)</div>
+        </div>
+        <div class="certification">
+          <div class="cert-name">Fundamentals of Accelerated Computing with CUDA</div>
+          <div class="issuer">NVIDIA (Jan 2024)</div>
+        </div>
+        <div class="certification">
+          <div class="cert-name">Data Entry Skills</div>
+          <div class="issuer">Udemy</div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <span class="skill">Advanced Excel</span>
+          <span class="skill">Microsoft Office</span>
+          <span class="skill">Google Workspace</span>
+          <span class="skill">IT Support</span>
+          <span class="skill">Troubleshooting</span>
+          <span class="skill">Linux (Kali GNOME)</span>
+          <span class="skill">Cisco Packet Tracer</span>
+          <span class="skill">ChatGPT for productivity</span>
+          <span class="skill">Communication</span>
+          <span class="skill">Time Management</span>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Enhanced data system efficiency by 20% at Yarmouk University.</li>
+          <li>Recognised for excellent student technical support and issue resolution.</li>
+        </ul>
+      </div>
+      
+      <div class="section">
+        <h2>References</h2>
+        <p>Available upon request.</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
