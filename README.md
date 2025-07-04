@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
@@ -137,6 +136,26 @@
       color: var(--primary-color);
     }
     
+    .download-btn {
+      display: inline-block;
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+    
+    .download-btn:hover {
+      background-color: var(--primary-color);
+      text-decoration: none;
+    }
+    
+    .download-btn i {
+      margin-right: 8px;
+    }
+    
     @media (max-width: 768px) {
       .container {
         margin: 0;
@@ -264,7 +283,10 @@
       
       <div class="section">
         <h2>References</h2>
-        <p>Available upon request.</p>
+        <p>Connect with me on <a href="https://linkedin.com/in/oday-hmydat" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> or download my full CV:</p>
+        <a href="path/to/your-cv.pdf" download class="download-btn">
+          <i class="fas fa-download"></i> Download PDF CV
+        </a>
       </div>
     </div>
   </div>
