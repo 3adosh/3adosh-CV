@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oday Hmydat - Cybersecurity Professional</title>
     <style>
+        /* Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -27,6 +28,7 @@
             overflow: hidden;
         }
         
+        /* Header Styles */
         header {
             background: linear-gradient(135deg, #1a2a6c, #2a3a7c);
             color: white;
@@ -54,6 +56,7 @@
             text-decoration: underline;
         }
         
+        /* Section Styles */
         section {
             padding: 25px 30px;
             border-bottom: 1px solid #eaeaea;
@@ -97,6 +100,7 @@
             left: 0;
         }
         
+        /* Skills Grid */
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -113,6 +117,7 @@
             font-size: 1.1rem;
         }
         
+        /* Experience Section */
         .job {
             margin-bottom: 20px;
         }
@@ -138,6 +143,7 @@
             margin-bottom: 8px;
         }
         
+        /* Footer */
         footer {
             text-align: center;
             padding: 15px;
@@ -145,6 +151,28 @@
             font-size: 0.9rem;
         }
         
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            section {
+                page-break-inside: avoid;
+            }
+            
+            .no-print {
+                display: none;
+            }
+        }
+        
+        /* Responsive Design */
         @media (max-width: 768px) {
             .job-header {
                 flex-direction: column;
@@ -157,6 +185,38 @@
             h1 {
                 font-size: 2rem;
             }
+            
+            section {
+                padding: 20px;
+            }
+        }
+        
+        /* ATS Optimization Styles */
+        .ats-keywords {
+            display: none;
+        }
+        
+        /* Call to Action */
+        .cta-section {
+            text-align: center;
+            background-color: #f0f4f8;
+            padding: 20px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #1a2a6c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #2a3a7c;
         }
     </style>
 </head>
@@ -170,6 +230,13 @@
                 <a href="https://linkedin.com/in/oday-hmydat" target="_blank">linkedin.com/in/oday-hmydat</a>
             </div>
         </header>
+        
+        <!-- Hidden ATS Keywords -->
+        <div class="ats-keywords">
+            SOC Analyst, Cybersecurity, Network Security, Incident Response, Threat Detection, 
+            Digital Forensics, SIEM, EDR, Cisco CCNA, Python, Linux, Vulnerability Management, 
+            IT Support, Troubleshooting, Deep Learning, NLP, CUDA, Security Operations Center
+        </div>
         
         <section id="summary">
             <h2>Professional Summary</h2>
@@ -285,9 +352,40 @@
             </ul>
         </section>
         
+        <section class="cta-section">
+            <h2>Get In Touch</h2>
+            <p>I'm currently seeking SOC Analyst, Cybersecurity Intern, or IT Security Specialist opportunities.</p>
+            <a href="mailto:odyhmydat@gmail.com" class="cta-button">Email Me</a>
+            <a href="https://linkedin.com/in/oday-hmydat" target="_blank" class="cta-button">View LinkedIn</a>
+            <a href="#" onclick="window.print()" class="cta-button no-print">Print CV</a>
+        </section>
+        
         <footer>
             <p>References available upon request</p>
         </footer>
     </div>
+    
+    <script>
+        // Simple script to enhance user experience
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Print functionality
+            const printButton = document.querySelector('.cta-button[onclick]');
+            if (printButton) {
+                printButton.addEventListener('click', function() {
+                    window.print();
+                });
+            }
+        });
+    </script>
 </body>
 </html>
