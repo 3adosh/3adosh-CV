@@ -196,29 +196,94 @@
             display: none;
         }
         
-        /* Call to Action */
-        .cta-section {
+        /* Enhanced Contact Section */
+        .contact-section {
             text-align: center;
-            background-color: #f0f4f8;
-            padding: 20px;
+            background: linear-gradient(135deg, #1a2a6c, #2a3a7c);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 0 0 8px 8px;
         }
         
-        .cta-button {
-            display: inline-block;
-            background: #1a2a6c;
+        .contact-section h2 {
             color: white;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 25px;
+        }
+        
+        .contact-section p {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            background: white;
+            color: #1a2a6c;
             padding: 12px 25px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 50px;
             font-weight: 600;
-            margin: 10px 5px;
-            transition: background 0.3s;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
-        .cta-button:hover {
-            background: #2a3a7c;
+        .contact-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background: #f0f4f8;
+        }
+        
+        .contact-button i {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+        
+        .references {
+            margin-top: 20px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+        
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -352,17 +417,39 @@
             </ul>
         </section>
         
-        <section class="cta-section">
+        <!-- Enhanced Contact Section -->
+        <section class="contact-section">
             <h2>Get In Touch</h2>
             <p>I'm currently seeking SOC Analyst, Cybersecurity Intern, or IT Security Specialist opportunities.</p>
-            <a href="mailto:odyhmydat@gmail.com" class="cta-button">Email Me</a>
-            <a href="https://linkedin.com/in/oday-hmydat" target="_blank" class="cta-button">View LinkedIn</a>
-            <a href="#" onclick="window.print()" class="cta-button no-print">Print CV</a>
+            
+            <div class="contact-buttons">
+                <a href="mailto:odyhmydat@gmail.com" class="contact-button">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="https://linkedin.com/in/oday-hmydat" target="_blank" class="contact-button">
+                    <i class="fab fa-linkedin"></i> View LinkedIn
+                </a>
+                <a href="#" class="contact-button no-print" onclick="window.print()">
+                    <i class="fas fa-print"></i> Print CV
+                </a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://linkedin.com/in/oday-hmydat" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:odyhmydat@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+962780545668" class="social-link">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+            
+            <div class="references">
+                <p>References available upon request</p>
+            </div>
         </section>
-        
-        <footer>
-            <p>References available upon request</p>
-        </footer>
     </div>
     
     <script>
@@ -379,7 +466,7 @@
             });
             
             // Print functionality
-            const printButton = document.querySelector('.cta-button[onclick]');
+            const printButton = document.querySelector('.contact-button[onclick]');
             if (printButton) {
                 printButton.addEventListener('click', function() {
                     window.print();
